@@ -1,74 +1,69 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: #ffffff;
+    background-color: #f0f2f5;
+    color: #333;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background: #333;
-    padding: 1em 0;
     text-align: center;
-    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 50px;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin: 0;
+    color: #4CAF50;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #888;
 }
 
 main {
-    padding: 2em;
-}
-
-section {
-    margin: 2em 0;
-}
-
-h2 {
-    border-bottom: 2px solid #ffcc00;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: rgba(255, 255, 255, 0.1);
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-li img {
-    width: 50px;
-    height: 50px;
-    margin-right: 1em;
-    border-radius: 50%;
-}
-
-li a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin-right: 1em;
-}
-
-li p {
-    margin: 0.5em 0 0;
-    word-break: break-all;
-}
-
-footer {
-    background: #333;
-    padding: 1em 0;
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 -4px 2px -2px gray;
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.item a {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.item a:hover {
+    color: #4CAF50;
 }
