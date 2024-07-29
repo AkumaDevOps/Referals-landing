@@ -42,7 +42,7 @@ main {
     margin: 10px;
     padding: 20px;
     text-align: center;
-    width: calc(25% - 40px);
+    width: calc(50% - 40px);
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
 }
@@ -66,4 +66,20 @@ main {
 
 .item a:hover {
     color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
 }
