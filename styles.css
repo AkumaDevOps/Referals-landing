@@ -1,52 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;
     color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.sidebar {
+    background: #000000;
+    padding: 20px;
+    /* Aumentado para mayor espacio */
+    width: 120px;
+    /* Ensanchado para el título */
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 2px solid #74f0ed;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #74f0ed;
+    margin-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    /* Para evitar que el texto se desborde */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    width: 100%;
     text-align: center;
 }
 
+.sidebar ul li a {
+    color: #74f0ed;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a .material-icons {
+    font-size: 40px;
+}
+
+.sidebar ul li a .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #ea445a;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar ul li a .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ea445a transparent transparent transparent;
+}
+
+.sidebar ul li a:hover {
+    color: #ea445a;
+}
+
+.sidebar ul li a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-icons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    /* Alinea los iconos verticalmente */
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: cover;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 140px;
+    /* Ajustar para dejar espacio para el sidebar */
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 140px);
 }
 
 header {
     padding: 50px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 3em;
     margin: 0;
-    color: #f4d03f;
+    color: #74f0ed;
 }
 
 header p {
     font-size: 1.2em;
-    color: #d4e6f1;
+    color: #ea445a;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .item {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #f4d03f;
+    border: 2px solid #74f0ed;
     border-radius: 15px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 20px;
     text-align: center;
-    width: calc(25% - 40px);
-    box-sizing: border-box;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -55,42 +163,107 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.item img {
+.item h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #74f0ed;
+}
+
+.game-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #74f0ed;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.game-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-item img {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
     border-radius: 50%;
 }
 
-.item a {
+.game-item a {
     display: block;
     font-size: 1.5em;
-    color: #f4d03f;
+    color: #74f0ed;
     text-decoration: none;
     margin-top: 10px;
     transition: color 0.2s;
 }
 
-.item a:hover {
-    color: #ffffff;
+.game-item a:hover {
+    color: #ea445a;
+}
+
+.ads-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed #74f0ed;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    color: #74f0ed;
+    font-size: 1.5em;
+    min-height: 200px;
 }
 
 @media (max-width: 768px) {
-    .item {
-        width: calc(50% - 40px);
+    .container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 300px;
+        border-right: none;
+        border-bottom: 2px solid #74f0ed;
+    }
+
+    .game-item {
+        width: calc(100% - 40px);
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2em;
-    }
+/* Estilos para el logo y el título */
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    /* Apila el nombre y el logo verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+}
 
-    header p {
-        font-size: 1em;
-    }
+.title {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño del texto según sea necesario */
+    margin-bottom: 0.5rem;
+    /* Espacio entre el nombre y el logo */
+    text-align: center;
+    /* Centra el texto */
+}
 
-    .item {
-        width: calc(100% - 40px);
-    }
+.logo {
+    width: 50px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 50px;
+    /* Debe ser igual a width para mantener la forma circular */
+    border-radius: 50%;
+    /* Hace que la imagen sea circular */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte bien dentro del círculo */
 }
