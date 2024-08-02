@@ -1,35 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Crypto Games and Tools</title>
+    <title>Crypto & NFT Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://th.bing.com/th/id/OIG2.iRrZ0tThhTLkayLI_gjR?w=173&h=173&c=6&r=0&o=5&pid=ImgGn"
+        type="image/png"> <!-- Favicon -->
 </head>
+
 <body>
+    <div class="sidebar">
+        <div class="logo-title">
+            <img src="https://th.bing.com/th/id/OIG2.iRrZ0tThhTLkayLI_gjR?w=173&h=173&c=6&r=0&o=5&pid=ImgGn"
+                alt="CryptoAdictos Logo" class="logo">
+            <div class="title">CryptoAdictos</div>
+        </div>
+        <ul>
+            <li><a href="#games" class="tooltip"><span class="material-icons">sports_esports</span><span
+                        class="tooltiptext">Juegos NFTs</span></a></li>
+            <li><a href="#collections" class="tooltip"><span class="material-icons">collections</span><span
+                        class="tooltiptext">Colecciones</span></a></li>
+            <li><a href="#tools" class="tooltip"><span class="material-icons">build</span><span
+                        class="tooltiptext">Herramientas</span></a></li>
+            <li><a href="#exchanges" class="tooltip"><span class="material-icons">swap_horiz</span><span
+                        class="tooltiptext">Exchanges</span></a></li>
+            <li><a href="#amazon" class="tooltip"><span class="material-icons">shopping_cart</span><span
+                        class="tooltiptext">Amazon</span></a></li>
+            <li><a href="#social" class="tooltip"><span class="material-icons">group</span><span
+                        class="tooltiptext">Redes
+                        Sociales</span></a></li>
+            <li><a href="#daily-combos" class="tooltip"><span class="material-icons">schedule</span><span
+                        class="tooltiptext">Daily Combos Telegram</span></a></li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="https://www.youtube.com/channel/UCXX3S1RI4iahIcbsOl_m3gw" target="_blank"
+                    aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                        height="100" viewBox="0 0 64 64">
+                        <path fill="#f44336"
+                            d="M38.8,26.5c0-2.3-1.9-4.2-4.3-4.2c-3.4-0.1-6.9-0.2-10.5-0.2c-3.6,0-7.1,0.1-10.5,0.2c-2.4,0-4.3,1.9-4.3,4.2 C9.1,28.3,9,30.2,9,32.1c0,1.9,0.1,3.7,0.2,5.6c0,2.3,1.9,4.2,4.3,4.2c3.4,0.1,6.9,0.2,10.5,0.2c3.6,0,7.1-0.1,10.5-0.2 c2.4,0,4.3-1.9,4.3-4.2c0.1-1.9,0.2-3.7,0.2-5.6C39,30.2,38.9,28.3,38.8,26.5z">
+                        </path>
+                        <path fill="#fff"
+                            d="M17.8,25.3v1.9c0,0.1-0.1,0.2-0.2,0.2h-1.9v11c0,0.1-0.1,0.2-0.2,0.2h-2c-0.1,0-0.2-0.1-0.2-0.2v-11h-1.9 c-0.1,0-0.2-0.1-0.2-0.2v-1.9c0-0.1,0.1-0.2,0.2-0.2h6.3C17.7,25,17.8,25.1,17.8,25.3z">
+                        </path>
+                        <path fill="#fff"
+                            d="M23,38.4c0,0.1-0.1,0.2-0.2,0.2H21c-0.1,0-0.2-0.1-0.2-0.2v-0.5c-0.2,0.2-0.5,0.4-0.7,0.6 c-0.4,0.2-0.8,0.3-1.2,0.3c-0.5,0-0.9-0.2-1.1-0.5c-0.2-0.3-0.4-0.8-0.4-1.4v-8.1c0-0.1,0.1-0.2,0.2-0.2h1.8 c0.1,0,0.2,0.1,0.2,0.2v7.4c0,0.2,0,0.3,0.1,0.4c0,0,0,0.1,0.2,0.1c0,0,0.2,0,0.4-0.2c0.2-0.1,0.3-0.3,0.5-0.4v-7.3 c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.2,0.1,0.2,0.2L23,38.4L23,38.4z">
+                        </path>
+                        <path fill="#fff"
+                            d="M29.5,29.1c-0.3-0.5-0.8-0.7-1.5-0.7c-0.3,0-0.6,0.1-0.9,0.3c-0.2,0.1-0.3,0.2-0.5,0.3v-3.7 c0-0.1-0.1-0.2-0.2-0.2h-1.8c-0.1,0-0.2,0.1-0.2,0.2v13.1c0,0.1,0.1,0.2,0.2,0.2h1.8c0.1,0,0.2-0.1,0.2-0.2v-0.2 c0.2,0.1,0.3,0.2,0.5,0.3c0.3,0.2,0.7,0.2,1,0.2c0.6,0,1.1-0.2,1.4-0.6c0.3-0.4,0.5-1,0.5-1.7V31C30,30.2,29.8,29.5,29.5,29.1z M27.7,36.1c0,0.3-0.1,0.5-0.1,0.5c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.2,0-0.4-0.1c-0.1,0-0.2-0.1-0.3-0.2v-5.9 c0.1-0.1,0.2-0.2,0.3-0.2c0.3-0.2,0.6-0.1,0.7,0.1c0.1,0.1,0.2,0.4,0.2,0.6V36.1z">
+                        </path>
+                        <path fill="#fff"
+                            d="M36.5,34c0.1,0,0.2-0.1,0.2-0.2v-2.5c0-1-0.3-1.7-0.7-2.3c-0.5-0.5-1.2-0.8-2.1-0.8c-0.9,0-1.6,0.3-2.1,0.9 c-0.5,0.6-0.8,1.3-0.8,2.2v4.4c0,1,0.3,1.8,0.8,2.3c0.5,0.6,1.2,0.9,2.1,0.9c1,0,1.7-0.3,2.2-0.8c0.5-0.5,0.7-1.3,0.7-2.4v-0.7 c0-0.1-0.1-0.2-0.2-0.2h-1.9c-0.1,0-0.2,0.1-0.2,0.2v0.7c0,0.7-0.1,0.9-0.1,1c-0.1,0.1-0.2,0.2-0.5,0.2c-0.3,0-0.4-0.1-0.4-0.2 c-0.1-0.1-0.2-0.4-0.2-0.9V34H36.5z M33.3,31.3c0-0.5,0.1-0.7,0.1-0.8c0.1-0.1,0.2-0.2,0.5-0.2c0.2,0,0.4,0.1,0.4,0.2 c0.1,0.1,0.2,0.3,0.2,0.8V32h-1.2V31.3z">
+                        </path>
+                        <g>
+                            <path fill="#455a64"
+                                d="M14.5,6h2.1l1.4,5.5h0.1L19.5,6h2.1l-2.5,8v6h-2.1v-5.7L14.5,6z M21.5,11.9c0-0.8,0.3-1.4,0.8-1.9 c0.5-0.5,1.2-0.7,2-0.7c0.8,0,1.4,0.2,1.9,0.7c0.5,0.5,0.7,1.1,0.7,1.9v5.2c0,0.9-0.2,1.5-0.7,2c-0.5,0.5-1.2,0.7-2,0.7 c-0.8,0-1.5-0.3-2-0.8c-0.5-0.5-0.7-1.2-0.7-2.1L21.5,11.9L21.5,11.9L21.5,11.9z M23.5,17.4c0,0.3,0.1,0.5,0.2,0.6 c0.1,0.1,0.3,0.2,0.6,0.2c0.3,0,0.5-0.1,0.6-0.2c0.1-0.2,0.2-0.4,0.2-0.6v-5.5c0-0.2-0.1-0.4-0.2-0.5c-0.2-0.1-0.4-0.2-0.6-0.2 c-0.2,0-0.4,0.1-0.6,0.2c-0.1,0.1-0.2,0.3-0.2,0.5C23.5,11.8,23.5,17.4,23.5,17.4z M33.9,9.6V20H32v-1.3c-0.3,0.4-0.7,0.7-1.1,0.9 c-0.4,0.2-0.7,0.3-1.1,0.3c-0.4,0-0.8-0.1-1-0.5c-0.2-0.3-0.3-0.8-0.3-1.4V9.6h1.9v7.9c0,0.2,0,0.4,0.1,0.5 c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.3-0.1,0.5-0.2c0.2-0.1,0.4-0.3,0.6-0.5V9.6H33.9z">
+                            </path>
+                        </g>
+                    </svg></a></li>
+            <li><a href="https://www.tiktok.com/@random.ai58" target="_blank" aria-label="TikTok"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                        <path fill="#212121" fill-rule="evenodd"
+                            d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191	C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z"
+                            clip-rule="evenodd"></path>
+                        <path fill="#ec407a" fill-rule="evenodd"
+                            d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011	c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413	c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413V20.607L29.208,20.607z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1	c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391	C17.213,29.127,17.972,30.274,19.079,30.832z"
+                            clip-rule="evenodd"></path>
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157	c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923V28.79c-0.007,1.867-1.523,3.379-3.393,3.379	c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391	c0.359,0,0.705,0.056,1.03,0.159v-3.19c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183	c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z"
+                            clip-rule="evenodd"></path>
+                        <path fill="#81d4fa" fill-rule="evenodd"
+                            d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848	C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019	c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338	c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069	c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183	C14.374,24.749,17.611,21.463,21.635,21.38z"
+                            clip-rule="evenodd"></path>
+                    </svg></a></li>
+        </ul>
+    </div>
     <div class="container">
         <header>
-            <h1>Welcome to My Crypto Games and Tools</h1>
-            <p>Check out these amazing Telegram games and tools!</p>
+            <h1>Bienvenido a Crypto & NFT Hub</h1>
+            <p>Descubre juegos, herramientas y colecciones de NFTs</p>
         </header>
         <main>
-            <div class="item">
-                <img src="https://via.placeholder.com/150" alt="Tap Monsters Icon">
-                <a href="https://t.me/tapmonsters_bot/start?startapp=ref1956860053">Tap Monsters</a>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150" alt="Hamster Kombat Icon">
-                <a href="https://t.me/hamsTer_kombat_bot/start?startapp=kentId1956860053">Hamster Kombat</a>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150" alt="Kuroro Ranch Icon">
-                <a href="https://t.me/KuroroRanchBot/ranch?startapp=ref-AA59F343">Kuroro Ranch</a>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150" alt="Gamee Icon">
-                <a href="https://t.me/gamee/start?startapp=ref_1956860053">Gamee</a>
-            </div>
+            <section id="games" class="item">
+                <h2>Juegos NFTs</h2>
+                <div class="game-item">
+                    <img src="https://cdn4.cdn-telegram.org/file/EPilzrmvg99Tm54IXNpR5EUCOzCNcyiXcsGblT-Odb0RjFx2mVDQZx7NFz7uGpgPqt_pq8ECIgNiJYSSfZK515iafL_oEG-MnSdxoDQK8ZMWKrKHJhGegva7fMG7yXA5cCvkvap1BfBViEb9a0AMwLVlXxG25BYlZr6EclAkh53SLtKPmjE5w26jYgPSnLcQv28JQsbcl0wgGrssdkp2Jp7QLxe7z62x34zw-qnYoONPFAWNC9bJ6tdG6zDpMaC_Ey0PCQpkHOF68Lh_vYcYCvnRp0E1lANQegK7eCDjSt_C3e7awDhKYcn40pDTo4TSZg8rj2ZaYgonwNUevrh2bw.jpg"
+                        alt="Tap Monsters Icon">
+                    <a href="https://t.me/tapmonsters_bot/start?startapp=ref1956860053">Tap Monsters</a>
+                </div>
+                <div class="game-item">
+                    <img src="https://cdn4.cdn-telegram.org/file/mlo4fQD8D7vmMFOOm-Qgg_KLzRn8mm8axJvFgFvABk7fzWAw9aFxQd6RlC9CHVPK1sjUA0Y-EWrYDHQxC1aVOIoRTYBVrRsXJHAKUHQqg2HOIRgxGVrCfeVB8QDNGYJMEDBk2etLqDWo9Pd72SYPEUrZamsFZbhiGWxHGISgm5IhzEgIAjZgrJFE0FgGncUi4y-Dtsc9tqdEBdQGaL2uKX58KHLWiJ3G7YJUusWp0zOj7AdQwEKazX-Fib9nKSObz3pp7khYQM4qX2y9fVzY8FWV7s1yT_NDZaygo-VrhHEw4yoS3PumBnf8HlypJJFXf8za9APwPGsjKwf-QCA9iw.jpg"
+                        alt="Hamster Kombat Icon">
+                    <a href="https://t.me/hamsTer_kombat_bot/start?startapp=kentId1956860053">Hamster Kombat</a>
+                </div>
+                <div class="game-item">
+                    <img src="https://cdn1.cdn-telegram.org/file/GhTA4Xh3B2qi9h2qzMuEXOXbuC587rsWeU_kIvF5GrdbZ67W1V16KG2Tp0z8C4-31krcJiCmA9wIBb8f8vgR8_Wr-BdgY8khSETMMpBg43DK5wi6aEcFguSntda70z3oXRkLWxRXzxKoZ5HAiTzGg4YfaU1mZKyf1pa3MFhulWgwRSL4YYjcuFvdmtlxf3FS06cCBk1KXXu4X9HYmeVO5EM6er3HwqZRxzuLMFYW7gY-htLX5sLpNrOosKlt693vfprF84qUpLSBLHwWgWfKqm7baRlWe8tQi6QvyUFHhHlWhtDXntBnWUP1Wnmm6z0-AbMrREtDNxMaz2a2AbmT6A.jpg"
+                        alt="Kuroro Ranch Icon">
+                    <a href="https://t.me/KuroroRanchBot/ranch?startapp=ref-AA59F343">Kuroro Ranch</a>
+                </div>
+                <div class="game-item">
+                    <img src="https://cdn4.cdn-telegram.org/file/QUNJy_z-3nIkK1OAeLevSSk_0y78imNYNSdOSaG6K8RFuaBHxxAR98qrlHXxBuSV4wMQPkci5tW7kdQIkL_xe0me9f-qR-kQcCqFCRMipsnhY-O5bEKrNeBN_EqUAfPuns0pHJx7GYg9VelS0pBS7cgP8tZavRfKQzdpcPLHzzge99uEy9NQqWOKsaKFn5t6AKIpj3O9vwa1_7Jn5XeIuw0dCIpSNH0b7GvYhIPEq3ONaRbeSfBL6K4ymjPZCnTBwH2T7uRrqt9JLHASc36NnYN0by69MbFuU-jrkrYNACo6Glo9x4rDNRD8FulB6kfS9AVvTyMCAxF6FEYNBYN4lA.jpg"
+                        alt="Gamee Icon">
+                    <a href="https://t.me/gamee/start?startapp=ref_1956860053">Gamee</a>
+                </div>
+            </section>
+            <section id="collections" class="item">
+                <h2>Colecciones</h2>
+                <!-- Contenido de colecciones -->
+            </section>
+            <section id="tools" class="item">
+                <h2>Herramientas</h2>
+                <!-- Contenido de herramientas -->
+            </section>
+            <section id="exchanges" class="item">
+                <h2>Exchanges</h2>
+                <!-- Contenido de exchanges -->
+            </section>
+            <section id="amazon" class="item">
+                <h2>Amazon</h2>
+                <!-- Contenido de Amazon -->
+            </section>
+            <section id="social" class="item">
+                <h2>Redes Sociales</h2>
+                <!-- Contenido de redes sociales -->
+            </section>
+            <section id="daily-combos" class="item">
+                <h2>Daily Combos Telegram</h2>
+                <!-- Contenido de Daily Combos Telegram -->
+            </section>
+            <section id="ads" class="item">
+                <h2>Publicidad</h2>
+                <!-- Contenido de publicidad -->
+                <div class="ads-placeholder">Tu anuncio aquí</div>
+            </section>
         </main>
     </div>
 </body>
+
 </html>
