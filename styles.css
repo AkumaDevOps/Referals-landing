@@ -7,16 +7,43 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    border-bottom: 2px solid #74f0ed;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sidebar {
     background: #000000;
     padding: 20px;
-    /* Aumentado para mayor espacio */
-    width: 120px;
-    /* Ensanchado para el título */
-    min-height: 100vh;
+    width: 80px;
+    min-height: calc(100vh - 80px);
+    /* Adjust this to control the height */
     position: fixed;
+    top: 80px;
+    /* Adjust this to match the height of the logo-title section */
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,13 +52,10 @@ body {
 }
 
 .title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 1.5rem;
     color: #74f0ed;
-    margin-bottom: 20px;
     text-align: center;
-    word-wrap: break-word;
-    /* Para evitar que el texto se desborde */
+    margin-bottom: 0;
 }
 
 .sidebar ul {
@@ -60,6 +84,10 @@ body {
     padding: 10px 20px;
 }
 
+.sidebar ul li a:hover {
+    color: #ea445a;
+}
+
 .sidebar ul li a .material-icons {
     font-size: 40px;
 }
@@ -75,7 +103,6 @@ body {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    /* Position the tooltip above the icon */
     left: 50%;
     margin-left: -60px;
     opacity: 0;
@@ -86,7 +113,6 @@ body {
     content: "";
     position: absolute;
     top: 100%;
-    /* Bottom of the tooltip */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -107,7 +133,6 @@ body {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    /* Alinea los iconos verticalmente */
     align-items: center;
     gap: 15px;
     padding: 10px;
@@ -121,14 +146,42 @@ body {
 }
 
 .container {
-    margin-left: 140px;
-    /* Ajustar para dejar espacio para el sidebar */
+    margin-top: 120px;
+    /* Adjust to leave space for the logo and header */
+    margin-left: 80px;
+    /* Space for the sidebar */
     padding: 20px;
-    width: calc(100% - 140px);
+    width: calc(100% - 80px);
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    /* Make sure content is scrollable if necessary */
+    box-sizing: border-box;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: #74f0ed;
+    margin-bottom: 20px;
 }
 
 header {
-    padding: 50px 0;
+    padding: 5px 0;
     text-align: center;
 }
 
@@ -146,6 +199,12 @@ header p {
 main {
     display: flex;
     flex-direction: column;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #ea445a;
+    text-align: center;
 }
 
 .item {
@@ -241,29 +300,20 @@ main {
 .logo-title {
     display: flex;
     flex-direction: column;
-    /* Apila el nombre y el logo verticalmente */
     align-items: center;
-    /* Centra el contenido horizontalmente */
     padding: 1rem;
     border-bottom: 1px solid #444;
 }
 
 .title {
     font-size: 1.5rem;
-    /* Ajusta el tamaño del texto según sea necesario */
     margin-bottom: 0.5rem;
-    /* Espacio entre el nombre y el logo */
     text-align: center;
-    /* Centra el texto */
 }
 
 .logo {
     width: 50px;
-    /* Ajusta el tamaño según sea necesario */
     height: 50px;
-    /* Debe ser igual a width para mantener la forma circular */
     border-radius: 50%;
-    /* Hace que la imagen sea circular */
     object-fit: cover;
-    /* Asegura que la imagen se recorte bien dentro del círculo */
 }
