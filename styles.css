@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root {
+    --primary-color: #6a8cff;
+    /* Azul Claro */
+    --secondary-color: #3b3f5c;
+    /* Gris Azulado */
+    --accent-color: #ff6f61;
+    /* Coral Suave */
+    --background-color: #f4f4f4;
+    /* Gris Claro */
+    --text-color: #333333;
+    /* Gris Oscuro */
+
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #000000;
-    color: #ffffff;
+    background: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,9 +29,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: var(--background-color);
     z-index: 1000;
-    border-bottom: 2px solid #74f0ed;
+    /* border-bottom: 2px solid var(--primary-color); */
 }
 
 .logo-title {
@@ -35,25 +49,24 @@ header {
 }
 
 .sidebar {
-    background: #000000;
+    background: #ffffff;
     padding: 20px;
     width: 80px;
     min-height: calc(100vh - 80px);
-    /* Adjust this to control the height */
     position: fixed;
     top: 80px;
-    /* Adjust this to match the height of the logo-title section */
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 2px solid #74f0ed;
+    /* border-right: 2px solid var(--primary-color); */
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
 .title {
     font-size: 1.5rem;
-    color: #74f0ed;
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 0;
 }
@@ -74,7 +87,7 @@ header {
 }
 
 .sidebar ul li a {
-    color: #74f0ed;
+    color: var(--primary-color);
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -85,7 +98,7 @@ header {
 }
 
 .sidebar ul li a:hover {
-    color: #ea445a;
+    color: var(--accent-color);
 }
 
 .sidebar ul li a .material-icons {
@@ -121,7 +134,7 @@ header {
 }
 
 .sidebar ul li a:hover {
-    color: #ea445a;
+    color: var(--accent-color);
 }
 
 .sidebar ul li a:hover .tooltiptext {
@@ -134,16 +147,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     padding: 10px;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
     background-size: cover;
 }
+
+
 
 .container {
     margin-top: 120px;
@@ -158,11 +172,6 @@ header {
     box-sizing: border-box;
 }
 
-.welcome-section h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 0;
-}
 
 .welcome-section h1 {
     font-size: 3rem;
@@ -202,14 +211,13 @@ main {
 }
 
 .welcome-section p {
-    font-size: 1.2em;
-    color: #ea445a;
+    font-size: 1.5rem;
+    color: var(--text-color);
     text-align: center;
 }
 
 .item {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #74f0ed;
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     margin: 20px 0;
     padding: 20px;
@@ -225,12 +233,11 @@ main {
 .item h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #74f0ed;
+    color: var(--primary-color);
 }
 
 .game-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #74f0ed;
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     margin: 20px;
     padding: 20px;
@@ -256,14 +263,14 @@ main {
 .game-item a {
     display: block;
     font-size: 1.5em;
-    color: #74f0ed;
+    color: var(--primary-color);
     text-decoration: none;
     margin-top: 10px;
     transition: color 0.2s;
 }
 
 .game-item a:hover {
-    color: #ea445a;
+    color: var(--accent-color);
 }
 
 .ads-placeholder {
@@ -278,7 +285,7 @@ main {
     min-height: 200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
         margin-left: 0;
         width: 100%;
@@ -286,9 +293,8 @@ main {
 
     .sidebar {
         position: relative;
-        width: 300px;
         border-right: none;
-        border-bottom: 2px solid #74f0ed;
+        /* border-bottom: 2px solid #74f0ed; */
     }
 
     .game-item {
@@ -302,7 +308,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid #444;
+    border-bottom: 1rem solid var(--primary-color);
 }
 
 .title {
